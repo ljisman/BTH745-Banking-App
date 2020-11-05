@@ -48,7 +48,7 @@ class Nav extends React.Component{
          <button onClick={()=>this.navigate('CARD')}>
        Insights
       </button>
-        <button onClick={this.navigate('REWARDS')}>
+        <button >
        Rewards
       </button>
       </div>
