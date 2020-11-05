@@ -276,3 +276,14 @@ border-radius: 4px;
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
 }
+
+/* Jenis */
+* {
+  box-sizing: border-box;
+}
+
+#page-wrap {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+/* End Jenis */

@@ -35,20 +35,20 @@ class Card extends React.Component{
   }
 }
 class Nav extends React.Component{
-  navigate(){
-    
+  navigate(location){
+    this.props.appCallBack(location)
   }
   render(){
     return(
       
       <div className="nav">
-         <button onClick={this.navigate}>
+         <button onClick={()=>this.navigate('TRANSACTION')}>
        Trasactions
       </button>
-         <button onClick={this.navigate}>
+         <button onClick={()=>this.navigate('CARD')}>
        Insights
       </button>
-        <button onClick={this.navigate}>
+        <button >
        Rewards
       </button>
       </div>
