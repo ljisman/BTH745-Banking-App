@@ -1,7 +1,7 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
-
-function TransactionsList(props) {
+class TransactionsList extends React.Component{
+    render () {
 
     return (
         <div class="mx-auto">
@@ -54,6 +54,7 @@ function TransactionsList(props) {
         </div>
     )
 
+}
 }
 
 export default TransactionsList;

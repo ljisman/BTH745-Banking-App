@@ -3,6 +3,7 @@ import './App.css';
 import Sidebar from './sidebar/sidebar'
 import {Card,Nav } from './homepage/hompage';
 import './sidebar/sidebar.css'
+import TransactionsList from './transactions/TransactionsList';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <div id="page-wrap">
           <h1>Yes Bank</h1>        
             <Card/>
+            <TransactionsList/>
             <Nav/>
         {/* </header> */}
         </div>
