@@ -3,7 +3,7 @@ import './App.css';
 import { React, Component } from "react";
 import Login from './login/login';
 import Sidebar from './sidebar/sidebar'
-import {Card,Nav } from './homepage/hompage';
+import {Card,Nav,PrototypeHomepage } from './homepage/hompage';
 import './sidebar/sidebar.css'
 import TransactionsList from './transactions/TransactionsList';
 
@@ -36,9 +36,9 @@ export default class App extends Component {
         {this.state.auth
           ?<div id="page-wrap">
   <h1>Yes Bank </h1>        
-            {this.state.view===CARD&&<Card/>}
-           {this.state.view===TRANSACTION&& <TransactionsList/>}
-            <Nav appCallBack={this.setVeiw}/>
+            {this.state.view===CARD&&<PrototypeHomepage/>}
+           {/* {this.state.vview===TRANSACTION&& <TransactionsList/>} */}
+            {/* <Nav appCallBack={this.setVeiw}/> */}
         </div>:<Login onLoginEvent={this.handleLogin}/>}
       </div>
     </div>

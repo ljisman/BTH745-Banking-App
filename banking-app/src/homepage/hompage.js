@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
+import { PieChart } from 'react-minimal-pie-chart';
 class Card extends React.Component{
   render(){
     return(
@@ -56,5 +57,36 @@ class Nav extends React.Component{
   }
 }
 
+class PrototypeHomepage extends React.Component{
+  render(){
+    return(
+      
+      <div className="nav">
+      <b>Accounts<hr style={{borderWidth:'10px',backgroundColor:'black'}}/></b>
 
-export  {Card, Nav}
+      <b>Checking $900 ></b>
+      <b>Savings $900 ></b>
+      {/* <hr style={{borderWidth:'10px',backgroundColor:'black'}}/> */}
+      <b><hr style={{borderWidth:'10px',backgroundColor:'black'}}/>Total $900<hr style={{borderWidth:'10px',backgroundColor:'black'}}/> </b>
+      {/* <hr style={{borderWidth:'10px',backgroundColor:'black'}}/> */}
+      <button >
+      <b>C/C *** *** *** 9084 $900 ></b>
+      </button>
+      <button >
+      <b>C/C *** *** *** 5084  $900 ></b>
+      </button>
+      <b style={{paddingTop:'20px',fontSize:'30px'}}>Spending Insights </b>
+      <PieChart
+  data={[
+    { title: 'One', value: 10, color: '#E38627' },
+    { title: 'Two', value: 15, color: '#C13C37' },
+    { title: 'Three', value: 20, color: '#6A2135' },
+  ]}
+/>
+      </div>
+    );
+  }
+}
+
+
+export  {Card, Nav,PrototypeHomepage}
