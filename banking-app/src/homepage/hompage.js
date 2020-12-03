@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import { PieChart } from 'react-minimal-pie-chart';
+import { Button } from 'react-bootstrap';
+const INVESTMENT ='INVESTMENT';
+const TRANSACTION ="TRANSACTION"
 class Card extends React.Component{
   render(){
     return(
@@ -64,8 +67,9 @@ class PrototypeHomepage extends React.Component{
       <div className="nav">
       <b>Accounts<hr style={{borderWidth:'10px',backgroundColor:'black'}}/></b>
 
-      <b>Checking $900 ></b>
-      <b>Savings $900 ></b>
+      <Button onClick={()=>this.props.onSetView(TRANSACTION)}>Checking $900 ></Button>
+      <Button onClick={()=>this.props.onSetView(TRANSACTION)}>Savings $900 ></Button>
+      <Button onClick={()=>this.props.onSetView(INVESTMENT)}>Investments ></Button>
       {/* <hr style={{borderWidth:'10px',backgroundColor:'black'}}/> */}
       <b><hr style={{borderWidth:'10px',backgroundColor:'black'}}/>Total $900<hr style={{borderWidth:'10px',backgroundColor:'black'}}/> </b>
       {/* <hr style={{borderWidth:'10px',backgroundColor:'black'}}/> */}

@@ -55,7 +55,7 @@ min-width:60%;
   flex-direction:column;
 /*   justify-content:center; */
 /*   align-items:center; */
-  background-color: coral;
+  /* background-color: coral; */
 }
 .middle{
   
@@ -84,7 +84,7 @@ min-width:60%;
   flex-direction:row;
 }
 h1{
-  color:white
+  color:black
 }
 
 /* ------------ */
