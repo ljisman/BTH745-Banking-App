@@ -1,0 +1,149 @@
+table  {
+    margin:0;
+    width: 100%;
+    border-collapse:collapse;
+    font-size:1em;
+    line-height:1.618em;
+    font-family:lato;
+  }
+  
+   th, td {
+    text-align:right; 
+    margin:0;
+   
+    padding:0.4em 0.809em 0.6em;
+  }
+  
+  td:nth-child(1) {
+    letter-spacing:1px;
+  }
+  
+  td:nth-child(2) {
+    color:rgba(0,0,0,0.6)
+  }
+  
+  th:nth-child(1), td:nth-child(1) {
+    text-align:left
+  }
+  
+   tr:nth-child(odd) {
+    background:#f2f2f2;
+  }
+  
+  .increase .change, .increase .percentage {
+    color:green;
+  }
+  
+   .increase .change:before {
+    content:"";
+    display:inline-block;
+    float:right;
+    border:0.3em solid transparent;
+    border-bottom:0.4em solid green;
+    position:relative;
+    left:0.4em;
+    top:0.2em;
+  }
+  
+  .decrease .change:before {
+    content:"";
+    display:inline-block;
+    float:right;
+    border:0.3em solid transparent;
+    border-top:0.4em solid red;
+    position:relative;
+    left:0.4em;
+    top:0.75em;
+  }
+  
+  .decrease .change, .decrease .percentage {
+    color:red;
+  }
+
+
+  /* header/copyright link */
+.link {
+    text-decoration: none;
+    color: #55acee;
+    border-bottom: 2px dotted #55acee;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+  }
+  
+  .link:hover {
+    color: #2ecc71;
+    border-bottom: 2px dotted #2ecc71;
+  }
+  
+  /* button div */
+  #buttons {
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+  /* start da css for da buttons */
+  .btn {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 10px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+  }
+  
+  .btnInput {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 10px;
+    color:black;
+    position: relative;
+    display: inline-block;
+    
+  }
+   
+  .btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+  }
+  
+  
+  .green {
+    background-color: #2ecc71;
+    box-shadow: 0px 5px 0px 0px #15B358;
+  }
+  
+  .green:hover {
+    background-color: #48E68B;
+  }
+  
+  .red {
+    background-color: #e74c3c;
+    box-shadow: 0px 5px 0px 0px #CE3323;
+  }
+  
+  .red:hover {
+    background-color: #FF6656;
+  }
+  
+  
+  
+  /* copyright stuffs.. */
+  p {
+    text-align: center;
+    color: #55acee;
+    padding-top: 20px;
+  }

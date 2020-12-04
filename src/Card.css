@@ -1,0 +1,126 @@
+body {
+	background: #777;
+	height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    padding: 10px;
+	--distance: 5rem;
+    
+}
+
+.cardContainer {
+    /* background: white; */
+    background-image: url('./pngegg.png');
+	border-radius: 1rem;
+	/* padding: 2rem; */
+	box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.75);
+    transition: .2s;
+    width: 200px;
+    height: 150px;
+}
+
+.cardContainer a {
+  text-decoration: none;;
+} 
+.cardContainer a:visted {
+  text-decoration: none;;
+} 
+
+.cardContainer:not(:first) {
+  margin-right: var(--distance);
+  
+}
+
+.cardContainer:hover, .cardContainer:focus-within {
+  transform: translateX(0rem);
+  
+}
+
+.cardContainer:hover ~ .cardContainer, .cardContainer:focus-within ~ .cardContainer {
+  transform: translateX(calc(var(--distance) * -1));
+  
+}
+
+.cardHolder {
+    height: 300px;
+    background: linear-gradient(
+      to right,
+      #6480ef,
+      #7775e8,
+      #806ce8
+    ); 
+  /*   border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%; */
+  }
+  .card{
+    height:100%;
+    width:100%;
+    background:rgb(226, 224, 224);
+   
+    margin:0 auto;
+    border-radius:1.2em;
+    /* margin-top:25px; */
+    padding:12px 20px;
+  }
+  .card > .part{
+    /* height:50px; */
+    margin-bottom:4px;
+  }
+  .card > .top{
+    display:flex;
+    justify-content:flex-end;
+  }
+  .card > .top > img{
+    height:48px;
+  
+  }
+  .infoheader{
+    /* height:20px; */
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:2px;
+    color:#95a5a6
+  }
+  .card > .middle > .infocontent{
+    justify-content:space-between;
+    /* height:30px; */
+  }
+  .number{
+    /* width:150px; */
+  }
+  .card > .middle > .infocontent > .num{
+    /* height:25px; */
+    font-size:14px;
+    letter-spacing:2px;
+    font-weight:bolder;
+  }
+
+ 
+  .card > .bottom{
+    display:flex;
+    justify-content:space-between
+  }
+  .holderInfo{
+    width:150px;
+  }
+  .holderInfo > .name,.expDate > .date{
+    font-size:13px;
+    font-weight:bolder;
+    letter-spacing:2px;
+  }
+  .vcenter{
+    display:flex;
+    align-items:center;
+  }
+
+  .card > img {
+      height: 150px
+  }
+
+  
