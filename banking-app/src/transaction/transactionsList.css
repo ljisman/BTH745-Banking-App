@@ -1,0 +1,19 @@
+.Buttons{
+    text-align: center;
+}
+.Buttons:hover{
+    background: white !important;
+    
+}
+
+tr {
+    height: 40px;
+   
+}
+tr:hover { background: lightblue !important;
+   
+}
+
+td:hover{
+     cursor: pointer;
+}
